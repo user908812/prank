@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .imagebg {
+        width: 100vw;
+        height: 100vh;
+      }
+      button {
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="imagebg" src="image.jpg" alt="image.png" onclick="goFullscreen()"></img>
+<script>
+    function goFullscreen() {
+        let elem = document.documentElement;
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        }
+    }
+</script>
+  </body>
+</html>
