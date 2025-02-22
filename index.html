@@ -14,11 +14,7 @@
         box-sizing: border-box;
       }
       body {
-        overflow: hidden;
-      }
-      .imagebg {
-        width: 100vw;
-        height: 100vh;
+        background: url('image.jpg');
       }
       button {
         background-color: transparent;
@@ -29,14 +25,5 @@
     </style>
   </head>
   <body>
-    <img class="imagebg" src="image.jpg" alt="image.png" onclick="goFullscreen()"></img>
-<script>
-    function goFullscreen() {
-        let elem = document.documentElement;
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        }
-    }
-</script>
   </body>
 </html>
